@@ -25,9 +25,9 @@ connection.once("open", () => {
 });
 
 // Accessing Routes
-// const exerciseRouter = require("./routes/exercises");
+const exerciseRouter = require("./routes/exercises");
 const userRouter = require("./routes/users");
-// app.use("/exercises", exerciseRouter);
+app.use("/exercises", exerciseRouter);
 app.use("/users", userRouter);
 
 // Starting server
